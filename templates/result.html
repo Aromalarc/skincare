@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Diagnosis Result</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background: #f9fafb;
+            margin: 0;
+            padding: 2rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            background: white;
+            padding: 2rem;
+            border-radius: 16px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+            max-width: 600px;
+            width: 100%;
+            text-align: center;
+        }
+
+        h1 {
+            color: #1f2937;
+        }
+
+        .result-box {
+            background: #f0fdf4;
+            border-left: 5px solid #10b981;
+            padding: 1rem;
+            margin-top: 1rem;
+            border-radius: 8px;
+            color: #065f46;
+        }
+
+        .explanation {
+            background: #e0f2fe;
+            border-left: 5px solid #0284c7;
+            padding: 1rem;
+            margin-top: 1rem;
+            border-radius: 8px;
+            color: #0c4a6e;
+        }
+
+        .treatment {
+            background: #fff7ed;
+            border-left: 5px solid #ea580c;
+            padding: 1rem;
+            margin-top: 1rem;
+            border-radius: 8px;
+            color: #78350f;
+        }
+
+        .image-preview {
+            margin-top: 1.5rem;
+            border-radius: 8px;
+            max-width: 100%;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+
+        .button {
+            margin-top: 2rem;
+            padding: 0.8rem 1.5rem;
+            background: #2563eb;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-weight: 600;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .button:hover {
+            background: #1e40af;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🩺 Skin Disease Diagnosis Result</h1>
+
+        <div class="result-box">
+            <h2>{{ prediction }}</h2>
+        </div>
+
+        {% if explanation %}
+        <div class="explanation">
+            <h4>About the Condition:</h4>
+            <p>{{ explanation }}</p>
+        </div>
+        {% endif %}
+
+        {% if cream %}
+        <div class="treatment">
+            <h4>Suggested Treatment:</h4>
+            <p>{{ cream }}</p>
+        </div>
+        {% endif %}
+
+        <a href="{{ url_for('index') }}" class="button">Analyze Another Image</a>
+    </div>
+</body>
+</html>
