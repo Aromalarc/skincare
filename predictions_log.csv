@@ -1,0 +1,18 @@
+Image,Predicted Condition,Confidence (%),Suggested Treatment
+test_image.jpg,Psoriasis,99.36,Calcipotriol Cream or Coal Tar Ointment
+test_image.jpg,Psoriasis,99.36,Calcipotriol Cream or Coal Tar Ointment
+test_image.jpg,Psoriasis,99.36,Calcipotriol Cream or Coal Tar Ointment
+test_image.jpg,Psoriasis,99.36,Calcipotriol Cream or Coal Tar Ointment
+test_image.jpg,Psoriasis,99.36,Calcipotriol Cream or Coal Tar Ointment
+test_image.jpg,Wart,99.25,Salicylic Acid Patch or Imiquimod Cream
+test_image.jpg,Wart,99.25,Salicylic Acid Patch or Imiquimod Cream
+test_image.jpg,Wart,99.25,Salicylic Acid Patch or Imiquimod Cream
+test_image.jpg,Wart,99.25,Salicylic Acid Patch or Imiquimod Cream
+test_image.jpg,Wart,99.25,Salicylic Acid Patch or Imiquimod Cream
+test_image.jpg,Wart,99.25,Salicylic Acid Patch or Imiquimod Cream
+test_image.jpg,Psoriasis,77.55,Calcipotriol Cream or Coal Tar Ointment
+test_image.jpg,Wart,88.52,Salicylic Acid Patch or Imiquimod Cream
+test_image.jpg,Wart,100.00,Salicylic Acid Patch or Imiquimod Cream
+test_image.jpg,Wart,100.00,Salicylic Acid Patch or Imiquimod Cream
+test_image.jpg,Wart,100.00,Salicylic Acid Patch or Imiquimod Cream
+test_image.jpg,Wart,100.00,Salicylic Acid Patch or Imiquimod Cream
