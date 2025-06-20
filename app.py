@@ -2,14 +2,14 @@ import os
 import numpy as np
 from PIL import Image
 from flask import Flask, render_template, request
-import tflite_runtime.interpreter as tflite
+from tensorflow.lite.python.interpreter import Interpreter
 
 # Initialize Flask
 app = Flask(__name__)
 app.config['UPLOAD_FOLDER'] = 'static/uploads'
 
 # Load TFLite model
-interpreter = tflite.Interpreter(model_path="static/model/mobilenet_skin_model.tflite")
+interpreter = Interpreter(model_path="static/model/mobilenet_skin_model.tflite")
 interpreter.allocate_tensors()
 
 input_details = interpreter.get_input_details()
